@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gustavo Montoya, backend developer</title>
+<meta name="description" content="Gustavo Montoya builds backend and desktop software for security cameras, recorders and phone lines. Node.js, Python, Java and Rust.">
+<meta property="og:title" content="Gustavo Montoya, backend developer">
+<meta property="og:description" content="Software that connects security cameras, recorders and phone lines to the people who monitor them.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gxmonto.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to projects</a>
+
+<header class="intro wrap">
+  <h1>Gustavo Montoya</h1>
+  <p class="role">Backend developer</p>
+  <p class="lede">I build the software between security cameras, recorders and phone lines and the people who monitor them: device drivers, streaming, alert pipelines and the services that keep remote sites running.</p>
+  <p class="lede-2">I work mostly in Node.js, Python and Java, and lately in Rust. Based in El Salvador, open to remote work.</p>
+  <ul class="contact">
+    <li><a href="mailto:tavoxmontoya@hotmail.com">tavoxmontoya@hotmail.com</a></li>
+    <li><a href="https://github.com/gxmonto">github.com/gxmonto</a></li>
+  </ul>
+</header>
+
+<section class="playback wrap" aria-labelledby="tl-title">
+  <div class="pb-head">
+    <h2 id="tl-title">Project history</h2>
+    <ul class="legend">
+      <li><span class="sw sw-work"></span>Work at SightWatch</li>
+      <li><span class="sw sw-oss"></span>Open source</li>
+      <li><span class="sw sw-early"></span>School and personal</li>
+    </ul>
+  </div>
+
+  <!-- Months on the axis: Oct 2023 to May 2024 (units 0–8), a break (8–9), Feb 2026 to Oct 2026 (9–18). -->
+  <div class="tl" role="list">
+    <div class="tl-row" role="listitem"><a class="tl-name" href="#univms">UniVMS</a><div class="tl-track"><span class="bar work" style="--s:17.03;--e:18"></span></div></div>
+    <div class="tl-row" role="listitem"><a class="tl-name" href="#twinline">TwinLine</a><div class="tl-track"><span class="bar work" style="--s:16.67;--e:18"></span></div></div>
+    <div class="tl-row" role="listitem"><a class="tl-name" href="#fleet">Camera fleet tools</a><div class="tl-track"><span class="bar work" style="--s:17.4;--e:18"></span></div></div>
+    <div class="tl-row" role="listitem"><a class="tl-name" href="#alerts">Alert console</a><div class="tl-track"><span class="bar work" style="--s:14.2;--e:15.1"></span></div></div>
+    <div class="tl-row" role="listitem"><a class="tl-name" href="#neolink">Neolink</a><div class="tl-track"><span class="bar oss" style="--s:17.62;--e:18"></span></div></div>
+    <div class="tl-row" role="listitem"><a class="tl-name" href="#minuteman">Minuteman</a><div class="tl-track"><span class="bar early" style="--s:9.3;--e:10"></span></div></div>
+    <div class="tl-row" role="listitem"><a class="tl-name" href="#bankspring">BankSpring</a><div class="tl-track"><span class="bar early" style="--s:7;--e:8"></span></div></div>
+    <div class="tl-row" role="listitem"><a class="tl-name" href="#bank2">Bank-2</a><div class="tl-track"><span class="bar early" style="--s:5;--e:6"></span></div></div>
+    <div class="tl-row" role="listitem"><a class="tl-name" href="#airline">Airline system</a><div class="tl-track"><span class="bar early" style="--s:4;--e:5"></span></div></div>
+    <div class="tl-row" role="listitem"><a class="tl-name" href="#grades">Grades portal</a><div class="tl-track"><span class="bar early" style="--s:0;--e:1"></span></div></div>
+    <div class="tl-axis" aria-hidden="true">
+      <span class="tl-name"></span>
+      <div class="tl-track axis">
+        <span class="tick" style="--p:0">Oct 2023</span>
+        <span class="tick" style="--p:3">2024</span>
+        <span class="gap"></span>
+        <span class="tick" style="--p:9">Feb 2026</span>
+        <span class="now">Today</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="work">
+<section class="group wrap" aria-labelledby="work-title">
+  <h2 id="work-title">Work at SightWatch</h2>
+  <p class="group-note">SightWatch monitors cameras for businesses. I build the desktop clients the operators use and the backend services behind them. Commits on these repositories appear under the company's account.</p>
+
+  <article class="project major" id="univms">
+    <div class="p-side">
+      <h3>UniVMS</h3>
+      <p class="when">Oct 2026 to now, version 1.4.16</p>
+      <ul class="links">
+        <li><a href="https://github.com/gxmonto/univms">Source code</a></li>
+        <li><a href="https://github.com/gxmonto/univms/releases">Releases</a></li>
+      </ul>
+    </div>
+    <div class="p-body">
+      <p>A desktop client for watching and managing security cameras from several brands in one place. Each brand speaks its own protocol, so the core of the app is a driver layer that turns all of them into one model for live view, playback, PTZ control and events.</p>
+      <ul class="points">
+        <li>Drivers for Hikvision, Dahua, Hanwha, Uniview, Reolink and DW Spectrum, over their HTTP APIs or native SDKs loaded through FFI.</li>
+        <li>One event center fed by every device's alert stream, with online/offline monitoring and snapshots on each alert.</li>
+        <li>Playback with a zoomable timeline, synchronized cameras and MP4 clip export through FFmpeg.</li>
+        <li>Self-updating installers for Windows, Debian and Fedora; 24 releases in its first three weeks. A company build, SightWatch VMS, signs in to the SightWatch platform.</li>
+      </ul>
+      <p class="stack">Node.js, Electron, FFmpeg, koffi (FFI), WebGL, GitHub Actions</p>
+    </div>
+  </article>
+
+  <article class="project major" id="twinline">
+    <div class="p-side">
+      <h3>TwinLine</h3>
+      <p class="when">Sep 2026 to now, version 1.4.37</p>
+      <ul class="links">
+        <li><a href="https://github.com/gxmonto/twinline">Source code</a></li>
+        <li><a href="https://github.com/gxmonto/twinline/releases">Releases</a></li>
+      </ul>
+    </div>
+    <div class="p-body">
+      <p>A two-line SIP softphone for Windows and Linux. The SIP stack is written from scratch rather than taken from a library: message parsing, transactions, digest authentication and SDP negotiation, plus RTP with a jitter buffer.</p>
+      <ul class="points">
+        <li>Two accounts registered at once, several calls per line, hold, swap and blind or attended transfer.</li>
+        <li>Conference calls mixed on the user's machine, so one participant can be held or dropped while the rest keep talking.</li>
+        <li>Optional call transcription that runs entirely offline.</li>
+        <li>Passwords encrypted with the operating system's key store, sandboxed windows under a strict content security policy, and two published security audits.</li>
+      </ul>
+      <p class="stack">Node.js, Electron, SIP, RTP, SDP, sherpa-onnx</p>
+    </div>
+  </article>
+
+  <article class="project" id="fleet">
+    <div class="p-side">
+      <h3>Camera fleet tools</h3>
+      <p class="when">Oct 2026 to now</p>
+      <p class="private">Internal, source is private</p>
+    </div>
+    <div class="p-body">
+      <p>Services for operating the video analytics boxes installed at client sites, all from one management machine.</p>
+      <ul class="points">
+        <li>An MCP server so staff can check every box's health, read its configuration and restart services by asking in a chat.</li>
+        <li>Every box is reached over SSH on a private Tailscale network; nothing new is exposed to the internet.</li>
+        <li>Health checks, a scheduler and pages for live and recorded video.</li>
+        <li>An API for the desktop client with browser sign-in through the OAuth loopback flow with PKCE.</li>
+      </ul>
+      <p class="stack">Python, MCP, Docker, Tailscale, go2rtc, Frigate, OpenCV, JWT</p>
+    </div>
+  </article>
+
+  <article class="project" id="alerts">
+    <div class="p-side">
+      <h3>Alert console</h3>
+      <p class="when">Jul 2026</p>
+      <p class="private">Internal, source is private</p>
+    </div>
+    <div class="p-body">
+      <p>A self-hosted console where monitoring operators review alerts from cameras and detection systems.</p>
+      <ul class="points">
+        <li>Webhooks for four alert sources, each normalized by its own parser into one alert model.</li>
+        <li>A live queue with snapshot and video playback for every alert.</li>
+        <li>Users, teams, sites, monitoring schedules and per-site forms, with role-based access and JWT sign-in.</li>
+        <li>A bridge that receives alerts sent by email and feeds them into the same pipeline.</li>
+      </ul>
+      <p class="stack">Python, FastAPI, SQLAlchemy, PostgreSQL, Docker Compose</p>
+    </div>
+  </article>
+</section>
+
+<section class="group wrap" aria-labelledby="oss-title">
+  <h2 id="oss-title">Open source</h2>
+
+  <article class="project major" id="neolink">
+    <div class="p-side">
+      <h3>Neolink</h3>
+      <p class="when">Oct 2026, 25 commits</p>
+      <ul class="links">
+        <li><a href="https://github.com/gxmonto/neolink/commits/master?author=gxmonto">My commits</a></li>
+        <li><a href="https://github.com/gxmonto/neolink">Fork</a></li>
+      </ul>
+    </div>
+    <div class="p-body">
+      <p>Neolink is a Rust proxy that serves Reolink cameras, which only speak a proprietary protocol, as standard RTSP streams. I maintain a fork with fixes for running it against busy recorders over relayed connections.</p>
+      <ul class="points">
+        <li>Channels on the same recorder now share one login, since recorders cap their sessions.</li>
+        <li>Lifted a relay throughput cap of about 90 kB/s by changing how UDP acknowledgments report latency and enlarging socket buffers.</li>
+        <li>One RTSP thread per client, so a stalled viewer no longer freezes every other channel, and streams are torn down when their clients leave.</li>
+        <li>Video timestamps taken from the camera's own clock, which fixed video playing up to twice as fast after dropped frames.</li>
+      </ul>
+      <p class="stack">Rust, GStreamer, RTSP, UDP</p>
+    </div>
+  </article>
+</section>
+
+<section class="group wrap" aria-labelledby="early-title">
+  <h2 id="early-title">Earlier projects</h2>
+  <div class="early-list">
+    <article class="mini" id="minuteman">
+      <h3><a href="https://github.com/gxmonto/minuteman">Minuteman</a></h3>
+      <p class="when">2026</p>
+      <p>A time tracking REST API: work days and timers per site, with Spring Security.</p>
+      <p class="stack">Java 25, Spring Boot 4, JPA, MySQL</p>
+    </article>
+    <article class="mini" id="bankspring">
+      <h3><a href="https://github.com/gxmonto/bankspring">BankSpring</a></h3>
+      <p class="when">2024</p>
+      <p>A bank management web app for customers, loans and loan payments.</p>
+      <p class="stack">Java, Spring Boot, Thymeleaf, JPA, MySQL</p>
+    </article>
+    <article class="mini" id="bank2">
+      <h3><a href="https://github.com/carlosHernandez17/Bank-2">Bank-2</a></h3>
+      <p class="when">2024, team of four</p>
+      <p>A console banking system. I replaced its menu switch with option classes built by factories.</p>
+      <p class="stack">Java, Maven, JUnit</p>
+    </article>
+    <article class="mini" id="airline">
+      <h3>Airline system</h3>
+      <p class="when">2024, private</p>
+      <p>A console app for users, flights, passengers and luggage.</p>
+      <p class="stack">Java</p>
+    </article>
+    <article class="mini" id="grades">
+      <h3>Grades portal</h3>
+      <p class="when">2023, private</p>
+      <p>A school portal for grades, sections and users, with the logic in WCF services and SQL Server stored procedures.</p>
+      <p class="stack">C#, ASP.NET Web Forms, WCF, SQL Server</p>
+    </article>
+  </div>
+</section>
+
+<section class="group wrap" aria-labelledby="skills-title">
+  <h2 id="skills-title">Tools I use</h2>
+  <dl class="skills">
+    <div><dt>Languages</dt><dd>JavaScript (Node.js), Python, Java, Rust, C#, SQL</dd></div>
+    <div><dt>Backend</dt><dd>FastAPI, Spring Boot, ASP.NET and WCF, REST APIs, webhooks, JWT and OAuth</dd></div>
+    <div><dt>Data</dt><dd>PostgreSQL, MySQL, SQL Server, SQLAlchemy, JPA</dd></div>
+    <div><dt>Infrastructure</dt><dd>Linux, Docker, systemd, SSH, Tailscale, GitHub Actions</dd></div>
+    <div><dt>Protocols</dt><dd>RTSP, RTP, SIP, ONVIF, HTTP</dd></div>
+  </dl>
+</section>
+</main>
+
+<footer class="wrap foot">
+  <p>Want to talk? Write to <a href="mailto:tavoxmontoya@hotmail.com">tavoxmontoya@hotmail.com</a>.</p>
+</footer>
+</body>
+</html>
